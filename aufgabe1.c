@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "modules/palindrom.h"
+#include "palindromLIB/palindrom.h"
 
 int main() {
     // A1: Übung 2 Aufgabe 7 auslagern in ein Modul

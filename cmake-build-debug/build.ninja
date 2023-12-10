@@ -55,11 +55,11 @@ build CMakeFiles/A1.dir/aufgabe1.c.o: C_COMPILER__A1_unscanned_Debug /home/theo/
   OBJECT_DIR = CMakeFiles/A1.dir
   OBJECT_FILE_DIR = CMakeFiles/A1.dir
 
-build CMakeFiles/A1.dir/modules/palindrom.c.o: C_COMPILER__A1_unscanned_Debug /home/theo/CLionProjects/uebung7/modules/palindrom.c || cmake_object_order_depends_target_A1
-  DEP_FILE = CMakeFiles/A1.dir/modules/palindrom.c.o.d
+build CMakeFiles/A1.dir/palindromLIB/palindrom.c.o: C_COMPILER__A1_unscanned_Debug /home/theo/CLionProjects/uebung7/palindromLIB/palindrom.c || cmake_object_order_depends_target_A1
+  DEP_FILE = CMakeFiles/A1.dir/palindromLIB/palindrom.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/A1.dir
-  OBJECT_FILE_DIR = CMakeFiles/A1.dir/modules
+  OBJECT_FILE_DIR = CMakeFiles/A1.dir/palindromLIB
 
 
 # =============================================================================
@@ -69,8 +69,9 @@ build CMakeFiles/A1.dir/modules/palindrom.c.o: C_COMPILER__A1_unscanned_Debug /h
 #############################################
 # Link the executable A1
 
-build A1: C_EXECUTABLE_LINKER__A1_Debug CMakeFiles/A1.dir/aufgabe1.c.o CMakeFiles/A1.dir/modules/palindrom.c.o
+build A1: C_EXECUTABLE_LINKER__A1_Debug CMakeFiles/A1.dir/aufgabe1.c.o CMakeFiles/A1.dir/palindromLIB/palindrom.c.o
   FLAGS = -g
+  LINK_LIBRARIES = -lm
   OBJECT_DIR = CMakeFiles/A1.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -108,6 +109,7 @@ build CMakeFiles/A2.dir/modules/list.c.o: C_COMPILER__A2_unscanned_Debug /home/t
 
 build A2: C_EXECUTABLE_LINKER__A2_Debug CMakeFiles/A2.dir/aufgabe2.c.o CMakeFiles/A2.dir/modules/list.c.o
   FLAGS = -g
+  LINK_LIBRARIES = -lm
   OBJECT_DIR = CMakeFiles/A2.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -129,6 +131,12 @@ build CMakeFiles/A3.dir/aufgabe3.c.o: C_COMPILER__A3_unscanned_Debug /home/theo/
   OBJECT_DIR = CMakeFiles/A3.dir
   OBJECT_FILE_DIR = CMakeFiles/A3.dir
 
+build CMakeFiles/A3.dir/modules/geometrics.c.o: C_COMPILER__A3_unscanned_Debug /home/theo/CLionProjects/uebung7/modules/geometrics.c || cmake_object_order_depends_target_A3
+  DEP_FILE = CMakeFiles/A3.dir/modules/geometrics.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/A3.dir
+  OBJECT_FILE_DIR = CMakeFiles/A3.dir/modules
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target A3
@@ -137,8 +145,9 @@ build CMakeFiles/A3.dir/aufgabe3.c.o: C_COMPILER__A3_unscanned_Debug /home/theo/
 #############################################
 # Link the executable A3
 
-build A3: C_EXECUTABLE_LINKER__A3_Debug CMakeFiles/A3.dir/aufgabe3.c.o
+build A3: C_EXECUTABLE_LINKER__A3_Debug CMakeFiles/A3.dir/aufgabe3.c.o CMakeFiles/A3.dir/modules/geometrics.c.o
   FLAGS = -g
+  LINK_LIBRARIES = -lm
   OBJECT_DIR = CMakeFiles/A3.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -170,6 +179,7 @@ build CMakeFiles/A4.dir/aufgabe4.c.o: C_COMPILER__A4_unscanned_Debug /home/theo/
 
 build A4: C_EXECUTABLE_LINKER__A4_Debug CMakeFiles/A4.dir/aufgabe4.c.o
   FLAGS = -g
+  LINK_LIBRARIES = -lm
   OBJECT_DIR = CMakeFiles/A4.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -201,6 +211,7 @@ build CMakeFiles/A5.dir/aufgabe5.c.o: C_COMPILER__A5_unscanned_Debug /home/theo/
 
 build A5: C_EXECUTABLE_LINKER__A5_Debug CMakeFiles/A5.dir/aufgabe5.c.o
   FLAGS = -g
+  LINK_LIBRARIES = -lm
   OBJECT_DIR = CMakeFiles/A5.dir
   POST_BUILD = :
   PRE_LINK = :
